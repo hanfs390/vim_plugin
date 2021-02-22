@@ -39,8 +39,16 @@ let g:SrcExpl_updateTagsKey='<F12>'     "更新tags的快捷键
 "-------normal------
 
 set mouse=a                     " always use mouse  
-
+nmap <F6> :set <c-r>=&mouse == 'a' ? 'mouse=v' : 'mouse=a'<cr><CR>
+"syntax enable
+"set background=dark
+"colorscheme solarized
+"let g:solarized_termcolors=256
+colorscheme desert
+set number
 "-------normal------
-
+"-------mark--------
 let mapleader = ","
 
+"-------mark--------
+nmap <F5> :diffupdate<CR>			"设置快捷键<F5>刷新diff
